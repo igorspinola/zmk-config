@@ -65,7 +65,7 @@
             bindings = <
 &trans     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                       &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp N1            &kp SLASH         &kp UNDER         &kp SINGLE_QUOTE  &kp PLUS                         &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&kp PIPE   &kp RA(CARET)     &kp EQUAL         &kp DQT           &kp PERIOD        &kp LS(COMMA)                    &kp CARET  &kp AMPS  &kp COLON  &kp LPAR   &kp RPAR  &kp PIPE
+&kp PIPE   &kp RA(NUMBER_6)  &kp EQUAL         &kp DQT           &kp PERIOD        &kp LS(COMMA)                    &kp CARET  &kp AMPS  &kp COLON  &kp LPAR   &kp RPAR  &kp PIPE
 &trans     &kp QUESTION      &kp MINUS         &kp RA(COMMA)     &kp MINUS         &kp TILDE      &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI   &kp COLON  &kp BSLH  &trans
                              &trans            &trans            &trans            &trans         &trans    &trans  &trans     &trans    &trans     &trans
             >;

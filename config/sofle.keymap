@@ -41,11 +41,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE         &kp N1  &kp N2            &kp N3    &kp N4     &kp N5                                   &kp N6     &kp N7     &kp N8     &kp N9    &kp N0          &sk RALT
-&kp BACKSPACE     &kp Q   &kp W             &kp E     &kp R      &kp T                                    &kp Y      &kp U      &kp I      &kp O     &kp P           &kp ESCAPE
-&sl 2             &kp A   &kp S             &kp D     &kp F      &kp G                                    &kp H      &kp J      &kp K      &kp L     &sl 1           &sk LSHFT
-&sk LEFT_CONTROL  &kp Z   &kp X             &kp C     &kp V      &kp B           &kp C_MUTE    &kp CLCK   &kp N      &kp M      &kp ENTER  &kp TAB   &sk LEFT_SHIFT  &kp RSHFT
-                          &sk LEFT_CONTROL  &kp LALT  &kp LCTRL  &sk LEFT_SHIFT  &kp RET       &kp SPACE  &kp SPACE  &kp RCTRL  &kp RALT   &kp RGUI
+&sl 3             &kp N1  &kp N2            &kp N3    &kp N4     &kp N5                                  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0          &sk RALT
+&kp BACKSPACE     &kp Q   &kp W             &kp E     &kp R      &kp T                                   &kp Y      &kp U      &kp I      &kp O     &kp P           &kp ESCAPE
+&sl 2             &kp A   &kp S             &kp D     &kp F      &kp G                                   &kp H      &kp J      &kp K      &kp L     &sl 1           &sk LSHFT
+&sk LEFT_CONTROL  &kp Z   &kp X             &kp C     &kp V      &kp B           &kp GRAVE    &kp CLCK   &kp N      &kp M      &kp ENTER  &kp TAB   &sk LEFT_SHIFT  &kp RSHFT
+                          &sk LEFT_CONTROL  &kp LALT  &kp LCTRL  &sk LEFT_SHIFT  &kp RET      &kp SPACE  &kp SPACE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -104,11 +104,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                    &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none           &none           &none         &none      &none  &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none           &none           &none         &none      &none  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none           &none           &none         &none      &none  &none
+                                    &none            &none            &none            &none            &none              &none  &none           &none           &none         &none
             >;
         };
     };

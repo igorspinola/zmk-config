@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
@@ -45,8 +44,8 @@
 &sl 3             &kp N1  &kp N2            &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0          &sk RALT
 &kp BACKSPACE     &kp Q   &kp W             &kp E     &kp R      &kp T                                &kp Y      &kp U      &kp I      &kp O     &kp P           &kp ESCAPE
 &sl 2             &kp A   &kp S             &kp D     &kp F      &kp G                                &kp H      &kp J      &kp K      &kp L     &sl 1           &sk LSHFT
-&sk LEFT_CONTROL  &kp Z   &kp X             &kp C     &kp V      &kp B           &tog 4     &kp CLCK  &kp N      &kp M      &kp ENTER  &kp TAB   &sk LEFT_SHIFT  &sl 4
-                          &sk LEFT_CONTROL  &kp LALT  &kp LCTRL  &sk LEFT_SHIFT  &kp RET    &tog 4    &kp SPACE  &kp RCTRL  &kp RALT   &kp RGUI
+&sk LEFT_CONTROL  &kp Z   &kp X             &kp C     &kp V      &kp B           &tog 5     &kp CLCK  &kp N      &kp M      &kp ENTER  &kp TAB   &sk LEFT_SHIFT  &sl 5
+                          &sk LEFT_CONTROL  &kp LALT  &kp LCTRL  &sk LEFT_SHIFT  &kp RET    &tog 5    &kp SPACE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -116,10 +115,20 @@
             display-name = "adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                               &none           &none           &none      &none      &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &mkp LCLK     &mkp RCLK     &rgb_ug RGB_EFF                            &none           &mkp LCLK       &mkp RCLK  &none      &none  &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp L         &kp R         &rgb_ug RGB_EFF                            &none           &kp L           &kp R      &none      &none  &none
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp LEFT      &kp RIGHT     &none                                      &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT  &kp RIGHT  &none  &none
 &none              &none            &none            &none         &none         &none            &rgb_ug RGB_TOG    &none  &none           &none           &none      &none      &none  &none
                                     &none            &none         &none         &none            &none              &none  &none           &none           &none      &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans    &trans     &trans                    &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans                    &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &kp LEFT  &kp RIGHT  &trans                    &trans  &kp LEFT  &kp RIGHT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans  &trans    &trans  &trans  &trans    &trans     &trans  &trans  &trans
+                &trans  &trans    &trans     &trans  &trans    &trans  &trans  &trans    &trans     &trans
             >;
         };
     };
